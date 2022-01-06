@@ -28,10 +28,11 @@ public abstract class Employee {
         this.salary = newSalary;
     }
 
-    public void raiseSalary(double raise){
-//        double salary = this.getSalary();
-        double newSalary = this.getSalary() + raise;
+    public double raiseSalary(double raise){
+        double salary = this.getSalary();
+        double newSalary = salary + raise;
         this.setSalary(newSalary);
+        return this.salary;
     }
 
     public double payBonus(){
